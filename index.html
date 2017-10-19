@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="js/iscroll-probe.js"></script>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"/>
+	<title>Document</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+//		字体大小
+	var wid=document.documentElement.clientWidth
+	document.documentElement.style.fontSize=wid/375*100+'px'
+	window.onresize=function(){
+	document.location.reload()
+	}	        
+	</script>
+</head>
+<body>
+	<div class="box1">
+		<header>
+			<div class="head">
+				<input type="text" name="" id="" value=""  placeholder="搜索今日最佳推荐"/>
+			</div>
+			<div class="con">
+				<img src="img/项目首页，牛_01.png"/>
+			</div>
+			<div class="con-y">
+				<ul>
+					<li>
+						<img src="img/img_12.jpg"/>
+						<p>美食</p>
+					</li>
+					<li>
+						<img src="img/img_03.jpg"/>
+						<p>水果</p>
+					</li>
+					<li>
+						<img src="img/img_05.jpg"/>
+						<p>干货</p>
+					</li>
+					<li>
+						<img src="img/img_07.jpg"/>
+						<p>营养师</p>
+					</li>
+					<li>
+						<img src="img/img_09.jpg"/>
+						<p>外卖</p>
+					</li>
+					<li>
+						<img src="img/img_19.jpg"/>
+						<p>外卖</p>
+					</li>
+					<li>
+						<img src="img/img_20.jpg"/>
+						<p>定制菜谱</p>
+					</li>
+					<li>
+						<img src="img/img_22.jpg"/>
+						<p>月子餐</p>
+					</li>
+					<li>
+						<img src="img/img_23.jpg"/>
+						<p>甜点</p>
+					</li>
+					<li>
+						<img src="img/img_24.jpg"/>
+						<p>更多</p>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div>
+			<div class="conen">
+				
+			</div>
+			<div class="fonen1">
+			<p>__热门食谱<span>BEST__</span></p>
+			</div>
+			<div class="foot">
+				<div>
+					<img src="img/项目首页，牛_17.png"/>
+				</div>
+				<div>
+					<p>红烧排骨</p>
+					<p>猪排骨提供人体生理活动必须的优质蛋白质,脂肪,尤其是丰富的钙质可维护骨倮健康</p>
+				</div>
+			</div>
+			
+			<div class="foot">
+				<div>
+					<img src="img/项目首页，牛_20.png"/>
+				</div>
+				<div>
+					<p>蔬菜拌面</p>
+					<p>猪排骨提供人体生理活动必须的优质蛋白质,脂肪,尤其是丰富的钙质可维护骨倮健康</p>
+				</div>
+			</div>
+			<div class="conen">
+				
+			</div>
+			<div class="fonen1">
+			<p>__为你优选<span>BEST__</span></p>
+			</div>
+				<div class="da">
+					<ul>
+						<li>
+							<img src="img/images/img_03.jpg"/>
+						</li>
+						<li>
+							<img src="img/images/img_05.jpg"/>
+						</li>
+						<li>
+							<img src="img/images/img_07.jpg"/>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<p class="glyphicon glyphicon-list-alt active"><span>首页</span></p>
+				</li>
+				<li>
+					<p class="glyphicon glyphicon-upload"><span>发现</span></p>
+				</li>
+				<li>
+					<p class="glyphicon glyphicon-barcode"><span>视频</span></p>
+					
+				</li>
+				<li>
+					<p class="glyphicon glyphicon-screenshot"><span>社区</span></p>
+					
+				</li>
+				<li>
+					<p class="glyphicon glyphicon-piggy-bank"><span>我的</span></p>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
+<script>
+	var si = new IScroll("main",{
+		
+	})
+	$("footer  li").click(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+	})
+	var is1 = new IScroll(".da",{
+		scrollX:true
+	})
+</script>
